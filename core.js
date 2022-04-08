@@ -7,7 +7,15 @@ const mcFetcher = {
         xhr.send();
         xhr.onload = () => {
             const data = JSON.parse(xhr.response);
-            console.log(data);
+            document.body.write(data);
         };
+
+    //     fetch(url)
+    // .then(result => result.json())
+    // .then(({ player }) => {
+    //     // Log the player's username
+    //     console.log(player.name)
+    // })
+
     },
 }
